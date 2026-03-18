@@ -4,7 +4,7 @@
 const BASE = import.meta.env.VITE_API_URL || "https://backend-1-rri5.onrender.com";
 
 async function request(path, options = {}) {
-  const url = path.startsWith("http") ? path : `${BASE}${path}`;
+  const url = path.startsWith("http") ? path : `${BASE}/api${path}`;
   const res = await fetch(url, {
     ...options,
     headers: {
