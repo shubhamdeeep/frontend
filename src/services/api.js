@@ -1,8 +1,7 @@
 /**
  * API client for HRMS Lite backend.
- * Uses relative /api so Vite proxy forwards to backend.
  */
-const BASE = "/api";
+const BASE = import.meta.env.VITE_API_URL || "https://backend-1-rri5.onrender.com";
 
 async function request(path, options = {}) {
   const url = path.startsWith("http") ? path : `${BASE}${path}`;

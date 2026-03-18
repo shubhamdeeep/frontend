@@ -4,6 +4,7 @@ import ThemeToggle from "./components/ui/ThemeToggle";
 import EmployeesPage from "./pages/EmployeesPage";
 import AttendancePage from "./pages/AttendancePage";
 
+
 function App() {
   return (
     <ThemeProvider>
